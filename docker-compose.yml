@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+        micro1:
+                build: ./micro
+        micro2:
+                build: ./micro
+        micro3:
+                build: ./micro
+        micro4:
+                build: ./micro
+        micro5:
+                build: ./micro
+        micro6:
+                build: ./micro
+        nginx:
+                build: ./nginx
+        locustio:
+                build: ./locustio
+                ports:
+                        - 8089:8089
